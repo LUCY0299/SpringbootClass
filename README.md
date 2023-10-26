@@ -22,26 +22,27 @@
 
 ### 課程大綱
 
-在第二堂課中，我們將學習以下內容：
-
-#### 套用 log4j2
+- 套用 log4j2
 
 ```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-log4j2</artifactId>
-</dependency>  ```
+</dependency>  
+```
 
-#### 套用Thymeleaf模板 (套用th tag)
+- 套用Thymeleaf模板 (套用th tag)
 ```xml
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-thymeleaf</artifactId>
-    </dependency>  ```
+    </dependency>  
+```
 
-####套用i18n
+- 套用i18n
 ```xml
-    src/main/java/org/tku/web/config/I18nConfiguration.java ```
+    src/main/java/org/tku/web/config/I18nConfiguration.java
+```
 
 ## 第三堂
 ### 課程大綱
@@ -54,16 +55,18 @@
             localeResolver.setLocale(request, response, new Locale(locale));
         }
         return "index";
-    }  ```
+    }
+```
 
 - 套用Thymeleaf模板 (套用layout tag)
 ```xml
     <dependency>
         <groupId>nz.net.ultraq.thymeleaf</groupId>
         <artifactId>thymeleaf-layout-dialect</artifactId>
-    </dependency> ```
+    </dependency> 
+```
 
-layout.html
+**layout.html**
 ```xml
 <html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" >
     <head>
@@ -77,9 +80,10 @@ layout.html
         <div layout:fragment="content"></div>
         <th:block th:include="common/footer :: footer"></th:block>
     </body>
-</html>  ```
+</html>  
+```
 
-nav.html
+**nav.html**
 ```xml
 <html xmlns:th="http://www.thymeleaf.org">
     <body >
@@ -107,7 +111,8 @@ nav.html
           </nav>
         </th:block>
     </body>
-</html>  ```
+</html>  
+```
 
 ## 第四堂
 ### 課程大綱
@@ -117,8 +122,8 @@ nav.html
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-security</artifactId>
-    </dependency>  ```
-
+    </dependency>  
+```
 
 
 
